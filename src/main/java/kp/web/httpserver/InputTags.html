@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML 5 Input Tags with Validation</title>
+</head>
+<body>
+	<form action="/" method="post" id="form1">
+		<p>
+			<input type="reset" value="Reset">
+		</p>
+
+		<p>
+			F. Name: <input type="text" name="fname" placeholder="First name"
+				maxlength="5" title="Five letter name"> &nbsp;&nbsp;&nbsp;L.
+			Name: <input type="text" name="lname" placeholder="Last name"
+				maxlength="5" title="Five letter name">
+		</p>
+
+		<p>
+			Quantity (12, 15, 18, 21 or 24): <input type=number name=quantity
+				min=12 max=24 step=3 value=18 required>
+		</p>
+
+		<p>
+			Enter kp.logging date between 2010-12-20 and 2010-12-31: <input
+				type="date" name="bday" min="2010-12-20" value="2010-12-24"
+				max="2010-12-31">
+		</p>
+
+		<p>
+			The three letter country code: <input type="text" name="country_code"
+				pattern="[A-Za-z]{3}" title="Three letter country code">
+		</p>
+
+		<p>
+			Select from list: <input list="browsers" name="browser"
+				placeholder="Browsers">
+		</p>
+		<datalist id="browsers">
+			<option value="Internet Explorer">
+			<option value="Firefox">
+			<option value="Chrome">
+			<option value="Opera">
+			<option value="Safari">
+		</datalist>
+
+		<p>
+			Select images: <input type="file" name="img" multiple>
+		</p>
+	</form>
+	<select>
+		<optgroup label="Swedish Cars">
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+		</optgroup>
+		<optgroup label="German Cars">
+			<option value="mercedes">Mercedes</option>
+			<option value="audi">Audi</option>
+		</optgroup>
+	</select>
+	<p>
+		<textarea rows="5" cols="150">
+Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit, sed quia non-numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
+</textarea>
+	</p>
+	<button type="submit" form="form1" value="Submit">Submit</button>
+</body>
+</html>
